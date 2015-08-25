@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF3A1C7F1B7A28620039859B /* icon_folder_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A1C7E1B7A28620039859B /* icon_folder_@2x.png */; };
+		DF3A1C811B7A286B0039859B /* icon_calc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3A1C801B7A286B0039859B /* icon_calc@2x.png */; };
+		DF6ED9E71B79BF5B00589A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6ED9E61B79BF5B00589A4F /* AppDelegate.swift */; };
+		DF6ED9E91B79BF5B00589A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6ED9E81B79BF5B00589A4F /* ViewController.swift */; };
+		DF6ED9EC1B79BF5B00589A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6ED9EA1B79BF5B00589A4F /* Main.storyboard */; };
+		DF6ED9EE1B79BF5B00589A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6ED9ED1B79BF5B00589A4F /* Assets.xcassets */; };
+		DF6ED9F11B79BF5B00589A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6ED9EF1B79BF5B00589A4F /* LaunchScreen.storyboard */; };
+		DF6ED9FC1B79BF5B00589A4F /* WarikanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6ED9FB1B79BF5B00589A4F /* WarikanTests.swift */; };
+		DF6EDA071B79BF5B00589A4F /* WarikanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA061B79BF5B00589A4F /* WarikanUITests.swift */; };
+		DF6EDA151B79C08200589A4F /* WarikanInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA141B79C08200589A4F /* WarikanInputViewController.swift */; };
+		DF6EDA171B79C1D100589A4F /* WarikanInputMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF6EDA161B79C1D100589A4F /* WarikanInputMainView.xib */; };
+		DF6EDA191B79C1F600589A4F /* WarikanInputMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA181B79C1F600589A4F /* WarikanInputMainView.swift */; };
+		DF6EDA1B1B79C42800589A4F /* WarikanSavedItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA1A1B79C42800589A4F /* WarikanSavedItemTableViewController.swift */; };
+		DF6EDA1D1B79C4EC00589A4F /* WarikanItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA1C1B79C4EC00589A4F /* WarikanItemDetailViewController.swift */; };
+		DF6EDA1F1B79C54600589A4F /* WarikanConfirmResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EDA1E1B79C54600589A4F /* WarikanConfirmResultViewController.swift */; };
+		DF748F9A1B7B1A4E00C03464 /* WarikanResultMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748F991B7B1A4E00C03464 /* WarikanResultMainView.swift */; };
+		DF748F9C1B7B1AEB00C03464 /* WarikanResultMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF748F9B1B7B1AEB00C03464 /* WarikanResultMainView.xib */; };
+		DF748F9E1B7B1D3F00C03464 /* WarikanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748F9D1B7B1D3F00C03464 /* WarikanResultViewController.swift */; };
+		DF748FA01B7B23C600C03464 /* WarikanSavedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748F9F1B7B23C600C03464 /* WarikanSavedItemTableViewCell.swift */; };
+		DF748FA21B7B25F200C03464 /* WarikanSavedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748FA11B7B25F200C03464 /* WarikanSavedItemModel.swift */; };
+		DF748FA41B7B33FA00C03464 /* WarikanItemDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748FA31B7B33FA00C03464 /* WarikanItemDetailMainView.swift */; };
+		DF748FA61B7B348A00C03464 /* WarikanItemDetailMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF748FA51B7B348A00C03464 /* WarikanItemDetailMainView.xib */; };
+		DF748FA81B7CC54900C03464 /* apple_trademark_color_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF748FA71B7CC54900C03464 /* apple_trademark_color_icon@2x.png */; };
+		DF748FAA1B7CCFC600C03464 /* WarikanInputGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF748FA91B7CCFC600C03464 /* WarikanInputGroupView.swift */; };
+		DF748FAC1B7CD02600C03464 /* WarikanInputGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF748FAB1B7CD02600C03464 /* WarikanInputGroupView.xib */; };
+		DF748FAF1B7DD16B00C03464 /* button_bg_blue_s1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF748FAD1B7DD16B00C03464 /* button_bg_blue_s1@2x.png */; };
+		DF748FB01B7DD16B00C03464 /* button_bg_blue_tp_s1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF748FAE1B7DD16B00C03464 /* button_bg_blue_tp_s1@2x.png */; };
+		DF748FB31B7DD1F200C03464 /* button_bg_green_s1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF748FB11B7DD1F200C03464 /* button_bg_green_s1@2x.png */; };
+		DF748FB41B7DD1F200C03464 /* button_bg_green_tp_s1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF748FB21B7DD1F200C03464 /* button_bg_green_tp_s1@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF6ED9F81B79BF5B00589A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6ED9DB1B79BF5A00589A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6ED9E21B79BF5A00589A4F;
+			remoteInfo = Warikan;
+		};
+		DF6EDA031B79BF5B00589A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6ED9DB1B79BF5A00589A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6ED9E21B79BF5A00589A4F;
+			remoteInfo = Warikan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF3A1C7E1B7A28620039859B /* icon_folder_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_folder_@2x.png"; sourceTree = "<group>"; };
+		DF3A1C801B7A286B0039859B /* icon_calc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_calc@2x.png"; sourceTree = "<group>"; };
+		DF6ED9E31B79BF5B00589A4F /* Warikan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warikan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6ED9E61B79BF5B00589A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF6ED9E81B79BF5B00589A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF6ED9EB1B79BF5B00589A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6ED9ED1B79BF5B00589A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6ED9F01B79BF5B00589A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF6ED9F21B79BF5B00589A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6ED9F71B79BF5B00589A4F /* WarikanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarikanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6ED9FB1B79BF5B00589A4F /* WarikanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanTests.swift; sourceTree = "<group>"; };
+		DF6ED9FD1B79BF5B00589A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6EDA021B79BF5B00589A4F /* WarikanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarikanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6EDA061B79BF5B00589A4F /* WarikanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanUITests.swift; sourceTree = "<group>"; };
+		DF6EDA081B79BF5B00589A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6EDA141B79C08200589A4F /* WarikanInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanInputViewController.swift; sourceTree = "<group>"; };
+		DF6EDA161B79C1D100589A4F /* WarikanInputMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarikanInputMainView.xib; sourceTree = "<group>"; };
+		DF6EDA181B79C1F600589A4F /* WarikanInputMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanInputMainView.swift; sourceTree = "<group>"; };
+		DF6EDA1A1B79C42800589A4F /* WarikanSavedItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanSavedItemTableViewController.swift; sourceTree = "<group>"; };
+		DF6EDA1C1B79C4EC00589A4F /* WarikanItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanItemDetailViewController.swift; sourceTree = "<group>"; };
+		DF6EDA1E1B79C54600589A4F /* WarikanConfirmResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanConfirmResultViewController.swift; sourceTree = "<group>"; };
+		DF748F991B7B1A4E00C03464 /* WarikanResultMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanResultMainView.swift; sourceTree = "<group>"; };
+		DF748F9B1B7B1AEB00C03464 /* WarikanResultMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarikanResultMainView.xib; sourceTree = "<group>"; };
+		DF748F9D1B7B1D3F00C03464 /* WarikanResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanResultViewController.swift; sourceTree = "<group>"; };
+		DF748F9F1B7B23C600C03464 /* WarikanSavedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanSavedItemTableViewCell.swift; sourceTree = "<group>"; };
+		DF748FA11B7B25F200C03464 /* WarikanSavedItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanSavedItemModel.swift; sourceTree = "<group>"; };
+		DF748FA31B7B33FA00C03464 /* WarikanItemDetailMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanItemDetailMainView.swift; sourceTree = "<group>"; };
+		DF748FA51B7B348A00C03464 /* WarikanItemDetailMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarikanItemDetailMainView.xib; sourceTree = "<group>"; };
+		DF748FA71B7CC54900C03464 /* apple_trademark_color_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple_trademark_color_icon@2x.png"; sourceTree = "<group>"; };
+		DF748FA91B7CCFC600C03464 /* WarikanInputGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarikanInputGroupView.swift; sourceTree = "<group>"; };
+		DF748FAB1B7CD02600C03464 /* WarikanInputGroupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarikanInputGroupView.xib; sourceTree = "<group>"; };
+		DF748FAD1B7DD16B00C03464 /* button_bg_blue_s1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_blue_s1@2x.png"; sourceTree = "<group>"; };
+		DF748FAE1B7DD16B00C03464 /* button_bg_blue_tp_s1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_blue_tp_s1@2x.png"; sourceTree = "<group>"; };
+		DF748FB11B7DD1F200C03464 /* button_bg_green_s1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_green_s1@2x.png"; sourceTree = "<group>"; };
+		DF748FB21B7DD1F200C03464 /* button_bg_green_tp_s1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_green_tp_s1@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF6ED9E01B79BF5A00589A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6ED9F41B79BF5B00589A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6ED9FF1B79BF5B00589A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3A1C7D1B7A28420039859B /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF748FA71B7CC54900C03464 /* apple_trademark_color_icon@2x.png */,
+				DF3A1C801B7A286B0039859B /* icon_calc@2x.png */,
+				DF3A1C7E1B7A28620039859B /* icon_folder_@2x.png */,
+				DF748FAD1B7DD16B00C03464 /* button_bg_blue_s1@2x.png */,
+				DF748FAE1B7DD16B00C03464 /* button_bg_blue_tp_s1@2x.png */,
+				DF748FB11B7DD1F200C03464 /* button_bg_green_s1@2x.png */,
+				DF748FB21B7DD1F200C03464 /* button_bg_green_tp_s1@2x.png */,
+			);
+			name = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		DF6ED9DA1B79BF5A00589A4F = {
+			isa = PBXGroup;
+			children = (
+				DF6ED9E51B79BF5B00589A4F /* Warikan */,
+				DF6ED9FA1B79BF5B00589A4F /* WarikanTests */,
+				DF6EDA051B79BF5B00589A4F /* WarikanUITests */,
+				DF6ED9E41B79BF5B00589A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF6ED9E41B79BF5B00589A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ED9E31B79BF5B00589A4F /* Warikan.app */,
+				DF6ED9F71B79BF5B00589A4F /* WarikanTests.xctest */,
+				DF6EDA021B79BF5B00589A4F /* WarikanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF6ED9E51B79BF5B00589A4F /* Warikan */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ED9E61B79BF5B00589A4F /* AppDelegate.swift */,
+				DF6ED9E81B79BF5B00589A4F /* ViewController.swift */,
+				DF6ED9EA1B79BF5B00589A4F /* Main.storyboard */,
+				DF6ED9ED1B79BF5B00589A4F /* Assets.xcassets */,
+				DF6ED9EF1B79BF5B00589A4F /* LaunchScreen.storyboard */,
+				DF6ED9F21B79BF5B00589A4F /* Info.plist */,
+				DF6EDA141B79C08200589A4F /* WarikanInputViewController.swift */,
+				DF6EDA161B79C1D100589A4F /* WarikanInputMainView.xib */,
+				DF6EDA181B79C1F600589A4F /* WarikanInputMainView.swift */,
+				DF748FA91B7CCFC600C03464 /* WarikanInputGroupView.swift */,
+				DF748FAB1B7CD02600C03464 /* WarikanInputGroupView.xib */,
+				DF6EDA1A1B79C42800589A4F /* WarikanSavedItemTableViewController.swift */,
+				DF748F9F1B7B23C600C03464 /* WarikanSavedItemTableViewCell.swift */,
+				DF748FA11B7B25F200C03464 /* WarikanSavedItemModel.swift */,
+				DF6EDA1C1B79C4EC00589A4F /* WarikanItemDetailViewController.swift */,
+				DF748FA31B7B33FA00C03464 /* WarikanItemDetailMainView.swift */,
+				DF748FA51B7B348A00C03464 /* WarikanItemDetailMainView.xib */,
+				DF6EDA1E1B79C54600589A4F /* WarikanConfirmResultViewController.swift */,
+				DF748F9D1B7B1D3F00C03464 /* WarikanResultViewController.swift */,
+				DF748F991B7B1A4E00C03464 /* WarikanResultMainView.swift */,
+				DF748F9B1B7B1AEB00C03464 /* WarikanResultMainView.xib */,
+				DF3A1C7D1B7A28420039859B /* SupportedFiles */,
+			);
+			path = Warikan;
+			sourceTree = "<group>";
+		};
+		DF6ED9FA1B79BF5B00589A4F /* WarikanTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ED9FB1B79BF5B00589A4F /* WarikanTests.swift */,
+				DF6ED9FD1B79BF5B00589A4F /* Info.plist */,
+			);
+			path = WarikanTests;
+			sourceTree = "<group>";
+		};
+		DF6EDA051B79BF5B00589A4F /* WarikanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EDA061B79BF5B00589A4F /* WarikanUITests.swift */,
+				DF6EDA081B79BF5B00589A4F /* Info.plist */,
+			);
+			path = WarikanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF6ED9E21B79BF5A00589A4F /* Warikan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EDA0B1B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "Warikan" */;
+			buildPhases = (
+				DF6ED9DF1B79BF5A00589A4F /* Sources */,
+				DF6ED9E01B79BF5A00589A4F /* Frameworks */,
+				DF6ED9E11B79BF5A00589A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Warikan;
+			productName = Warikan;
+			productReference = DF6ED9E31B79BF5B00589A4F /* Warikan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF6ED9F61B79BF5B00589A4F /* WarikanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EDA0E1B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "WarikanTests" */;
+			buildPhases = (
+				DF6ED9F31B79BF5B00589A4F /* Sources */,
+				DF6ED9F41B79BF5B00589A4F /* Frameworks */,
+				DF6ED9F51B79BF5B00589A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6ED9F91B79BF5B00589A4F /* PBXTargetDependency */,
+			);
+			name = WarikanTests;
+			productName = WarikanTests;
+			productReference = DF6ED9F71B79BF5B00589A4F /* WarikanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF6EDA011B79BF5B00589A4F /* WarikanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EDA111B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "WarikanUITests" */;
+			buildPhases = (
+				DF6ED9FE1B79BF5B00589A4F /* Sources */,
+				DF6ED9FF1B79BF5B00589A4F /* Frameworks */,
+				DF6EDA001B79BF5B00589A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6EDA041B79BF5B00589A4F /* PBXTargetDependency */,
+			);
+			name = WarikanUITests;
+			productName = WarikanUITests;
+			productReference = DF6EDA021B79BF5B00589A4F /* WarikanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF6ED9DB1B79BF5A00589A4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = akirambow;
+				TargetAttributes = {
+					DF6ED9E21B79BF5A00589A4F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DF6ED9F61B79BF5B00589A4F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DF6ED9E21B79BF5A00589A4F;
+					};
+					DF6EDA011B79BF5B00589A4F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DF6ED9E21B79BF5A00589A4F;
+					};
+				};
+			};
+			buildConfigurationList = DF6ED9DE1B79BF5A00589A4F /* Build configuration list for PBXProject "Warikan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF6ED9DA1B79BF5A00589A4F;
+			productRefGroup = DF6ED9E41B79BF5B00589A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF6ED9E21B79BF5A00589A4F /* Warikan */,
+				DF6ED9F61B79BF5B00589A4F /* WarikanTests */,
+				DF6EDA011B79BF5B00589A4F /* WarikanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF6ED9E11B79BF5A00589A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6ED9F11B79BF5B00589A4F /* LaunchScreen.storyboard in Resources */,
+				DF748FA81B7CC54900C03464 /* apple_trademark_color_icon@2x.png in Resources */,
+				DF6ED9EE1B79BF5B00589A4F /* Assets.xcassets in Resources */,
+				DF3A1C7F1B7A28620039859B /* icon_folder_@2x.png in Resources */,
+				DF6EDA171B79C1D100589A4F /* WarikanInputMainView.xib in Resources */,
+				DF3A1C811B7A286B0039859B /* icon_calc@2x.png in Resources */,
+				DF748FA61B7B348A00C03464 /* WarikanItemDetailMainView.xib in Resources */,
+				DF748FAF1B7DD16B00C03464 /* button_bg_blue_s1@2x.png in Resources */,
+				DF748FAC1B7CD02600C03464 /* WarikanInputGroupView.xib in Resources */,
+				DF748FB41B7DD1F200C03464 /* button_bg_green_tp_s1@2x.png in Resources */,
+				DF748FB01B7DD16B00C03464 /* button_bg_blue_tp_s1@2x.png in Resources */,
+				DF748F9C1B7B1AEB00C03464 /* WarikanResultMainView.xib in Resources */,
+				DF748FB31B7DD1F200C03464 /* button_bg_green_s1@2x.png in Resources */,
+				DF6ED9EC1B79BF5B00589A4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6ED9F51B79BF5B00589A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EDA001B79BF5B00589A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF6ED9DF1B79BF5A00589A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6ED9E91B79BF5B00589A4F /* ViewController.swift in Sources */,
+				DF6EDA151B79C08200589A4F /* WarikanInputViewController.swift in Sources */,
+				DF748FA21B7B25F200C03464 /* WarikanSavedItemModel.swift in Sources */,
+				DF748F9A1B7B1A4E00C03464 /* WarikanResultMainView.swift in Sources */,
+				DF6EDA1F1B79C54600589A4F /* WarikanConfirmResultViewController.swift in Sources */,
+				DF6EDA1D1B79C4EC00589A4F /* WarikanItemDetailViewController.swift in Sources */,
+				DF6EDA191B79C1F600589A4F /* WarikanInputMainView.swift in Sources */,
+				DF748FAA1B7CCFC600C03464 /* WarikanInputGroupView.swift in Sources */,
+				DF6ED9E71B79BF5B00589A4F /* AppDelegate.swift in Sources */,
+				DF748F9E1B7B1D3F00C03464 /* WarikanResultViewController.swift in Sources */,
+				DF748FA41B7B33FA00C03464 /* WarikanItemDetailMainView.swift in Sources */,
+				DF748FA01B7B23C600C03464 /* WarikanSavedItemTableViewCell.swift in Sources */,
+				DF6EDA1B1B79C42800589A4F /* WarikanSavedItemTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6ED9F31B79BF5B00589A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6ED9FC1B79BF5B00589A4F /* WarikanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6ED9FE1B79BF5B00589A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6EDA071B79BF5B00589A4F /* WarikanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF6ED9F91B79BF5B00589A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6ED9E21B79BF5A00589A4F /* Warikan */;
+			targetProxy = DF6ED9F81B79BF5B00589A4F /* PBXContainerItemProxy */;
+		};
+		DF6EDA041B79BF5B00589A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6ED9E21B79BF5A00589A4F /* Warikan */;
+			targetProxy = DF6EDA031B79BF5B00589A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF6ED9EA1B79BF5B00589A4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6ED9EB1B79BF5B00589A4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF6ED9EF1B79BF5B00589A4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6ED9F01B79BF5B00589A4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF6EDA091B79BF5B00589A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF6EDA0A1B79BF5B00589A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF6EDA0C1B79BF5B00589A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Warikan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.Warikan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF6EDA0D1B79BF5B00589A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Warikan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.Warikan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF6EDA0F1B79BF5B00589A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WarikanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.WarikanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warikan.app/Warikan";
+			};
+			name = Debug;
+		};
+		DF6EDA101B79BF5B00589A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WarikanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.WarikanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warikan.app/Warikan";
+			};
+			name = Release;
+		};
+		DF6EDA121B79BF5B00589A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WarikanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.WarikanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Warikan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DF6EDA131B79BF5B00589A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WarikanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akirambow.WarikanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Warikan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF6ED9DE1B79BF5A00589A4F /* Build configuration list for PBXProject "Warikan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EDA091B79BF5B00589A4F /* Debug */,
+				DF6EDA0A1B79BF5B00589A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EDA0B1B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "Warikan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EDA0C1B79BF5B00589A4F /* Debug */,
+				DF6EDA0D1B79BF5B00589A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EDA0E1B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "WarikanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EDA0F1B79BF5B00589A4F /* Debug */,
+				DF6EDA101B79BF5B00589A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EDA111B79BF5B00589A4F /* Build configuration list for PBXNativeTarget "WarikanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EDA121B79BF5B00589A4F /* Debug */,
+				DF6EDA131B79BF5B00589A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF6ED9DB1B79BF5A00589A4F /* Project object */;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarikanResultMainView" customModule="Warikan" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WarikanResultMainView" customModule="Warikan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxg-Nw-a2d">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-qK-ExM" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="960"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iD7-3K-ioh">
+                                    <rect key="frame" x="47" y="99" width="46" height="30"/>
+                                    <animations/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="onTestButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="1CL-bf-Qa4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="960" id="g1e-Eq-2Dz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Reh-qK-ExM" secondAttribute="bottom" id="33T-Aj-YAF"/>
+                        <constraint firstAttribute="trailing" secondItem="Reh-qK-ExM" secondAttribute="trailing" id="FH0-ji-Kj7"/>
+                        <constraint firstItem="Reh-qK-ExM" firstAttribute="width" secondItem="Rxg-Nw-a2d" secondAttribute="width" id="Xab-Vy-wQd"/>
+                        <constraint firstItem="Reh-qK-ExM" firstAttribute="top" secondItem="Rxg-Nw-a2d" secondAttribute="top" id="yFY-Yn-SVV"/>
+                        <constraint firstItem="Reh-qK-ExM" firstAttribute="leading" secondItem="Rxg-Nw-a2d" secondAttribute="leading" id="z1L-9o-w5P"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rxg-Nw-a2d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Auw-5A-J7D"/>
+                <constraint firstItem="Rxg-Nw-a2d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q1I-ij-oiU"/>
+                <constraint firstAttribute="trailing" secondItem="Rxg-Nw-a2d" secondAttribute="trailing" id="kqq-uD-p7q"/>
+                <constraint firstAttribute="bottom" secondItem="Rxg-Nw-a2d" secondAttribute="bottom" id="xaz-SL-Pu5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mTestButton" destination="iD7-3K-ioh" id="PZW-ZF-pb8"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="288"/>
+        </view>
+    </objects>
+</document>

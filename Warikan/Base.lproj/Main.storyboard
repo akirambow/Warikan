@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jvV-4T-EQC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--保存一覧-->
+        <scene sceneID="twm-Ua-jaI">
+            <objects>
+                <tableViewController id="qSu-Ye-iFw" customClass="WarikanSavedItemTableViewController" customModule="Warikan" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3IR-xj-Usf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Lb0-bX-uIQ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lb0-bX-uIQ" id="ABg-al-GpJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="CiI-0e-4tN" kind="show" identifier="showDetailSegue" id="sky-FG-bhE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qSu-Ye-iFw" id="wfO-Kn-nKp"/>
+                            <outlet property="delegate" destination="qSu-Ye-iFw" id="Okg-Q0-e9b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="保存一覧" id="Hzp-iu-Fwj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihG-lB-nfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="-144"/>
+        </scene>
+        <!--計算結果詳細-->
+        <scene sceneID="mUH-tD-ZSY">
+            <objects>
+                <viewController id="CiI-0e-4tN" customClass="WarikanItemDetailViewController" customModule="Warikan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kxb-XP-IBO"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5H-TZ-agg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EqI-ZB-Qeo" customClass="WarikanItemDetailMainView" customModule="Warikan" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="計算結果詳細" id="F4W-qd-bnq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5e-WX-sBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="-144"/>
+        </scene>
+        <!--SavedItem Navi-->
+        <scene sceneID="4my-K3-1tN">
+            <objects>
+                <navigationController id="RaK-jA-FYU" userLabel="SavedItem Navi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="保存一覧" image="icon_folder_.png" id="4Hm-FU-pg1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8mf-4r-FeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qSu-Ye-iFw" kind="relationship" relationship="rootViewController" id="kFt-NY-CMl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0w-Py-N3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-144"/>
+        </scene>
+        <!--計算-->
+        <scene sceneID="6vn-lC-HDK">
+            <objects>
+                <viewController id="AJF-tJ-ksE" customClass="WarikanInputViewController" customModule="Warikan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dKD-Pa-lZM"/>
+                        <viewControllerLayoutGuide type="bottom" id="SnQ-1r-rAx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7VG-45-j8y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="計算" id="XRC-0m-dBo"/>
+                    <connections>
+                        <segue destination="D7N-49-xH6" kind="show" identifier="showResultSegue" id="mnO-Z1-fr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLL-qT-ZM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-1112"/>
+        </scene>
+        <!--計算結果-->
+        <scene sceneID="yfU-x1-AfM">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="D7N-49-xH6" customClass="WarikanResultViewController" customModule="Warikan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C32-aw-emS"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNF-sy-3dv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wJJ-Ms-2h6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="計算結果" id="b7e-MN-Q8m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0W-sl-5ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="-1112"/>
+        </scene>
+        <!--Calculation Navi-->
+        <scene sceneID="4Fc-28-mDi">
+            <objects>
+                <navigationController id="2s9-eS-Y1h" userLabel="Calculation Navi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="計算" image="icon_calc.png" id="teD-4X-QNh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JX9-QC-EIt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AJF-tJ-ksE" kind="relationship" relationship="rootViewController" id="Bcz-Jg-AwV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yX7-au-fdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="-1112"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sya-mK-sq7">
+            <objects>
+                <tabBarController id="jvV-4T-EQC" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5Qt-Yb-kdj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2s9-eS-Y1h" kind="relationship" relationship="viewControllers" id="EmB-gQ-wmc"/>
+                        <segue destination="RaK-jA-FYU" kind="relationship" relationship="viewControllers" id="itb-65-jAG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9g-pR-45u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1348" y="-693"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_calc.png" width="17" height="21"/>
+        <image name="icon_folder_.png" width="22" height="22"/>
+    </resources>
+</document>

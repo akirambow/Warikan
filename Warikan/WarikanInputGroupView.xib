@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarikanInputGroupView" customModule="Warikan" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WarikanInputGroupView" customModule="Warikan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMa-kD-MCc" userLabel="Label for Group Name">
+                    <rect key="frame" x="4" y="4" width="592" height="22"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="2gF-gO-Cb5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48O-Zv-XeC" userLabel="Increment Button">
+                    <rect key="frame" x="472" y="34" width="33" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0aK-Pb-d9e"/>
+                        <constraint firstAttribute="width" constant="33" id="c5H-GQ-uaT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="+" backgroundImage="button_bg_blue_s1.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onIncrementButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="pD6-bl-zOm"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0 人" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-rF-CwW" userLabel="Input Field For Count">
+                    <rect key="frame" x="505" y="34" width="54" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="VpU-lR-fg5"/>
+                        <constraint firstAttribute="height" constant="44" id="Xh0-lJ-WGw"/>
+                    </constraints>
+                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-0d-Kg0" userLabel="Decrement Button">
+                    <rect key="frame" x="559" y="34" width="33" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="V6Y-HR-fbz"/>
+                        <constraint firstAttribute="height" constant="44" id="tQa-ai-z6J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="-" backgroundImage="button_bg_blue_s1.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onDecrementButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PZC-cb-lSO"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2vT-TN-zx1">
+                    <rect key="frame" x="42" y="86" width="516" height="45"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XJy-cQ-aKo"/>
+                    </constraints>
+                    <color key="minimumTrackTintColor" red="0.1058823529" green="0.1960784314" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="onAdjustSliderMoved:" destination="iN0-l3-epB" eventType="valueChanged" id="lIV-Sb-oLj"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0P-3H-5zC" userLabel="Label for Amount">
+                    <rect key="frame" x="4" y="138" width="592" height="22"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="foW-gl-xql"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="一人あたり金額　　¥">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <integer key="NSUnderline" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" 0">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <integer key="NSUnderline" value="1"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wK9-57-eGK" userLabel="Input Field For Group Name">
+                    <rect key="frame" x="4" y="34" width="460" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Oak-6a-coe"/>
+                    </constraints>
+                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wK9-57-eGK" firstAttribute="top" secondItem="kMa-kD-MCc" secondAttribute="bottom" constant="8" id="3bQ-gj-gDu"/>
+                <constraint firstItem="wK9-57-eGK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="63V-sn-Adu"/>
+                <constraint firstAttribute="trailing" secondItem="kMa-kD-MCc" secondAttribute="trailing" constant="4" id="PPw-7V-bGz"/>
+                <constraint firstItem="0nc-0d-Kg0" firstAttribute="top" secondItem="kMa-kD-MCc" secondAttribute="bottom" constant="8" id="RpR-UO-tnc"/>
+                <constraint firstItem="kMa-kD-MCc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Sk3-Sy-ZLo"/>
+                <constraint firstItem="2vT-TN-zx1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="T1A-3y-WT8"/>
+                <constraint firstItem="Y0P-3H-5zC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="TVI-aX-Fx1"/>
+                <constraint firstItem="2vT-TN-zx1" firstAttribute="top" secondItem="wK9-57-eGK" secondAttribute="bottom" constant="8" id="U9H-Vn-enK"/>
+                <constraint firstItem="48O-Zv-XeC" firstAttribute="leading" secondItem="wK9-57-eGK" secondAttribute="trailing" constant="8" id="Vih-7V-JQf"/>
+                <constraint firstAttribute="trailing" secondItem="Y0P-3H-5zC" secondAttribute="trailing" constant="4" id="aO3-6W-gOz"/>
+                <constraint firstAttribute="trailing" secondItem="2vT-TN-zx1" secondAttribute="trailing" constant="44" id="dgW-kk-agy"/>
+                <constraint firstItem="2vT-TN-zx1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fPQ-I5-sk8"/>
+                <constraint firstItem="Y0P-3H-5zC" firstAttribute="top" secondItem="2vT-TN-zx1" secondAttribute="bottom" constant="8" id="gEA-1m-27A"/>
+                <constraint firstItem="0nc-0d-Kg0" firstAttribute="leading" secondItem="KR8-rF-CwW" secondAttribute="trailing" id="gO6-yG-D5a"/>
+                <constraint firstAttribute="trailing" secondItem="0nc-0d-Kg0" secondAttribute="trailing" constant="8" id="heN-1Z-7jQ"/>
+                <constraint firstItem="Y0P-3H-5zC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kNX-oI-4ju"/>
+                <constraint firstItem="48O-Zv-XeC" firstAttribute="top" secondItem="kMa-kD-MCc" secondAttribute="bottom" constant="8" id="mKe-w0-147"/>
+                <constraint firstItem="kMa-kD-MCc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="nIH-bD-HHR"/>
+                <constraint firstItem="KR8-rF-CwW" firstAttribute="top" secondItem="kMa-kD-MCc" secondAttribute="bottom" constant="8" id="w2c-lx-Cjn"/>
+                <constraint firstItem="KR8-rF-CwW" firstAttribute="leading" secondItem="48O-Zv-XeC" secondAttribute="trailing" id="xsa-Af-N4W"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mAdjustAmountSlider" destination="2vT-TN-zx1" id="aTX-sD-AcV"/>
+                <outlet property="mCountInputField" destination="KR8-rF-CwW" id="KHA-tu-cyL"/>
+                <outlet property="mDecrementButton" destination="0nc-0d-Kg0" id="Rgc-Z5-dsx"/>
+                <outlet property="mGroupNameInputField" destination="wK9-57-eGK" id="7av-wr-9Cr"/>
+                <outlet property="mGroupNameLabel" destination="kMa-kD-MCc" id="s8F-pz-qJm"/>
+                <outlet property="mIncrementButton" destination="48O-Zv-XeC" id="jnw-jh-1gp"/>
+                <outlet property="mPerAmountLabel" destination="Y0P-3H-5zC" id="Hsf-6v-zcR"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_bg_blue_s1.png" width="240" height="44"/>
+    </resources>
+</document>

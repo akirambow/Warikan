@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarikanInputMainView" customModule="Warikan" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WarikanInputMainView" customModule="Warikan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-BA-CoB">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jR6-u1-cEB">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会計額" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVM-WP-NTy">
+                                    <rect key="frame" x="4" y="4" width="592" height="30"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="zRd-rv-Imb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" red="0.10980392156862745" green="0.20392156862745098" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="¥ 0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYg-DO-0Wf">
+                                    <rect key="frame" x="4" y="42" width="592" height="44"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="wJs-v9-eeq"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.10980392156862745" green="0.20392156862745098" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="割り勘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df6-Jc-bHb">
+                                    <rect key="frame" x="4" y="110" width="592" height="30"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ljt-CN-Bda"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" red="0.10980392156862745" green="0.20392156862745098" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwK-vy-d8A" userLabel="WarikanGroupView1">
+                                    <rect key="frame" x="4" y="148" width="592" height="168"/>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="168" id="2Jg-BZ-Dvw"/>
+                                        <constraint firstAttribute="height" constant="168" id="Q9L-wl-TMm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgO-j3-D5u" userLabel="WarikanInputButtonsView">
+                                    <rect key="frame" x="4" y="496" width="592" height="128"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0U-yY-prP">
+                                            <rect key="frame" x="176" y="8" width="240" height="44"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="XUw-3f-xmZ"/>
+                                                <constraint firstAttribute="height" constant="44" id="bUC-IQ-ASH"/>
+                                            </constraints>
+                                            <state key="normal" title="+ グループを追加" backgroundImage="button_bg_blue_s1.png"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSl-b3-RR9">
+                                            <rect key="frame" x="176" y="68" width="240" height="44"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="XL0-wA-cU6"/>
+                                                <constraint firstAttribute="height" constant="44" id="XhM-bV-yMb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <state key="normal" title="計算結果のおまとめ表示　＞＞" backgroundImage="button_bg_green_s1.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onConfirmButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="sPF-Bx-SeJ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="A0U-yY-prP" firstAttribute="centerX" secondItem="hgO-j3-D5u" secondAttribute="centerX" id="4jS-Xk-bEM"/>
+                                        <constraint firstItem="bSl-b3-RR9" firstAttribute="top" secondItem="A0U-yY-prP" secondAttribute="bottom" constant="16" id="8VU-48-mAL"/>
+                                        <constraint firstItem="bSl-b3-RR9" firstAttribute="centerX" secondItem="hgO-j3-D5u" secondAttribute="centerX" id="SAz-aS-1hg"/>
+                                        <constraint firstItem="A0U-yY-prP" firstAttribute="top" secondItem="hgO-j3-D5u" secondAttribute="top" constant="8" id="Sk0-ra-lWD"/>
+                                        <constraint firstAttribute="height" constant="128" id="ujM-ci-bhI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dw-7j-HkQ" userLabel="WarikanGroupView2">
+                                    <rect key="frame" x="4" y="320" width="592" height="168"/>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="168" id="T5c-tL-IK6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="df6-Jc-bHb" secondAttribute="trailing" constant="4" id="27z-8d-Lf5"/>
+                                <constraint firstItem="YwK-vy-d8A" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="76B-Ox-aeE"/>
+                                <constraint firstItem="yVM-WP-NTy" firstAttribute="top" secondItem="jR6-u1-cEB" secondAttribute="top" constant="4" id="E2y-IN-iY1"/>
+                                <constraint firstItem="4dw-7j-HkQ" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="O7s-yO-qVV"/>
+                                <constraint firstAttribute="trailing" secondItem="ZYg-DO-0Wf" secondAttribute="trailing" constant="4" id="Plr-KJ-fWb"/>
+                                <constraint firstAttribute="trailing" secondItem="YwK-vy-d8A" secondAttribute="trailing" constant="4" id="Ql4-Qv-R8C"/>
+                                <constraint firstAttribute="trailing" secondItem="hgO-j3-D5u" secondAttribute="trailing" constant="4" id="QrX-K5-qal"/>
+                                <constraint firstItem="4dw-7j-HkQ" firstAttribute="top" secondItem="YwK-vy-d8A" secondAttribute="bottom" constant="4" id="Rf0-gW-14D"/>
+                                <constraint firstItem="ZYg-DO-0Wf" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="XvZ-Lw-hVL"/>
+                                <constraint firstItem="hgO-j3-D5u" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="Xxj-iM-cg2"/>
+                                <constraint firstItem="df6-Jc-bHb" firstAttribute="top" secondItem="ZYg-DO-0Wf" secondAttribute="bottom" constant="24" id="ZAZ-vn-pGq"/>
+                                <constraint firstItem="yVM-WP-NTy" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="biY-QU-n29"/>
+                                <constraint firstAttribute="height" constant="600" id="bxs-fD-M81"/>
+                                <constraint firstItem="YwK-vy-d8A" firstAttribute="top" secondItem="df6-Jc-bHb" secondAttribute="bottom" constant="8" id="e58-lC-dah"/>
+                                <constraint firstItem="ZYg-DO-0Wf" firstAttribute="top" secondItem="yVM-WP-NTy" secondAttribute="bottom" constant="8" id="f8a-Xs-o41"/>
+                                <constraint firstItem="YwK-vy-d8A" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="ftU-SI-64d"/>
+                                <constraint firstItem="hgO-j3-D5u" firstAttribute="top" secondItem="4dw-7j-HkQ" secondAttribute="bottom" constant="8" id="gPJ-go-JP9"/>
+                                <constraint firstItem="df6-Jc-bHb" firstAttribute="leading" secondItem="jR6-u1-cEB" secondAttribute="leading" constant="4" id="mSB-tV-ksM"/>
+                                <constraint firstAttribute="trailing" secondItem="4dw-7j-HkQ" secondAttribute="trailing" constant="4" id="p1H-n6-7SM"/>
+                                <constraint firstAttribute="trailing" secondItem="yVM-WP-NTy" secondAttribute="trailing" constant="4" id="vwB-PY-Dgm"/>
+                                <constraint firstAttribute="trailing" secondItem="YwK-vy-d8A" secondAttribute="trailing" constant="4" id="wdo-re-HZk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="jR6-u1-cEB" firstAttribute="leading" secondItem="OHa-BA-CoB" secondAttribute="leading" id="94J-LI-1N1"/>
+                        <constraint firstItem="jR6-u1-cEB" firstAttribute="top" secondItem="OHa-BA-CoB" secondAttribute="top" id="Szx-QC-Uar"/>
+                        <constraint firstAttribute="trailing" secondItem="jR6-u1-cEB" secondAttribute="trailing" id="YES-H7-uq9"/>
+                        <constraint firstAttribute="bottom" secondItem="jR6-u1-cEB" secondAttribute="bottom" id="dBk-Ub-U4C"/>
+                        <constraint firstItem="jR6-u1-cEB" firstAttribute="width" secondItem="OHa-BA-CoB" secondAttribute="width" id="jta-KN-EUL"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OHa-BA-CoB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3CL-S8-RqM"/>
+                <constraint firstItem="OHa-BA-CoB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EWe-51-0sN"/>
+                <constraint firstAttribute="trailing" secondItem="OHa-BA-CoB" secondAttribute="trailing" id="HwK-OR-1Mk"/>
+                <constraint firstAttribute="bottom" secondItem="OHa-BA-CoB" secondAttribute="bottom" id="anM-Xm-itT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mConfirmButton" destination="bSl-b3-RR9" id="QTx-b2-0Dv"/>
+                <outlet property="mInputAmountField" destination="ZYg-DO-0Wf" id="brK-ze-kQP"/>
+                <outlet property="mInputGroupFirst" destination="YwK-vy-d8A" id="8kY-vq-Mp4"/>
+                <outlet property="mInputGroupSecond" destination="4dw-7j-HkQ" id="7lp-aD-nAT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_bg_blue_s1.png" width="240" height="44"/>
+        <image name="button_bg_green_s1.png" width="240" height="44"/>
+    </resources>
+</document>
